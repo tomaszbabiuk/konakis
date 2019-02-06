@@ -1,5 +1,7 @@
 package konakis.navigation
 
+import konakis.viewmodel.KonakisViewModelFactory
+
 interface NavigationService {
-    fun navigateToFirstView()
+    fun navigateToView(factory: KonakisViewModelFactory)
 }

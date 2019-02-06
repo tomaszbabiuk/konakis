@@ -3,8 +3,8 @@ package konakis.sample.ui
 import androidx.fragment.app.Fragment
 import androidx.lifecycle.ViewModelProvider
 import konakis.framework.AndroidNavigationAction
-import konakis.sample.viewmodel.TermsViewModel
 import sample.R
+import sample.TermsViewModel
 import sample.databinding.FragmentTermsBinding
 
 class TermsNavigationAction(factory: ViewModelProvider.NewInstanceFactory) :

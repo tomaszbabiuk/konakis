@@ -3,7 +3,7 @@
     <data>
         <variable
                 name="vm"
-                type="konakis.sample.viewmodel.TermsViewModel"/>
+                type="sample.TermsViewModel"/>
     </data>
     <LinearLayout
             android:orientation="vertical"
