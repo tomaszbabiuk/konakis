@@ -6,13 +6,13 @@ class BootstrapException(message : String) : Exception(message)
 
 class Bootstrap {
 
-    val navigationService: NavigationService? = null
+    var navigationService: NavigationService? = null
 
     fun start() {
         if (navigationService == null) {
             throw BootstrapException("Cannot start without navigation service!")
         }
 
-        navigationService.navigateToFirstView()
+        navigationService!!.navigateToFirstView()
     }
 }
