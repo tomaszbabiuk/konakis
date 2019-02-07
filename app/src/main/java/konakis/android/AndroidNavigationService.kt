@@ -3,17 +3,17 @@ package konakis.android
 import androidx.fragment.app.Fragment
 import androidx.fragment.app.FragmentManager
 import konakis.navigation.NavigationService
-import konakis.navigation.HardcodedViewRouter
+import konakis.navigation.ViewRouter
 import konakis.viewmodel.KonakisViewModelFactory
 import sample.R
 
 class AndroidNavigationService(
     private val supportFragmentManager: FragmentManager,
-    private val hardcodedViewRouter: HardcodedViewRouter
+    private val viewRouter: ViewRouter
 ) : NavigationService {
 
     override fun showViewModel(factory: KonakisViewModelFactory) {
-        val fragment = hardcodedViewRouter.routeToView(factory)
+        val fragment = viewRouter.routeToView(factory)
         showFragment(fragment)
     }
 

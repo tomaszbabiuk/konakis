@@ -4,7 +4,7 @@ import android.os.Bundle
 import androidx.annotation.Nullable
 import androidx.appcompat.app.AppCompatActivity
 import konakis.android.AndroidNavigationService
-import konakis.navigation.HardcodedViewRouter
+import konakis.android.NamingConventionViewRouter
 import sample.R
 import sample.SampleBootstrap
 
@@ -15,7 +15,9 @@ class MainActivity : AppCompatActivity() {
 
         if (savedInstanceState == null) {
             val bootstrap = SampleBootstrap()
-            val viewRouter = HardcodedViewRouter()
+
+            //you can also implement ViewRouter if you didn't want to use reflection
+            val viewRouter = NamingConventionViewRouter("sample.ui")
             bootstrap.navigationService = AndroidNavigationService(supportFragmentManager, viewRouter)
             bootstrap.start()
         }

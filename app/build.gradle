@@ -68,6 +68,9 @@ kotlin {
                 //Lifecycle
                 implementation "androidx.lifecycle:lifecycle-runtime:2.0"
                 implementation "androidx.lifecycle:lifecycle-extensions:2.1.0-alpha02"
+
+                //reflections
+                implementation "org.reflections:reflections:0.9.11"
             }
         }
         androidTest {
