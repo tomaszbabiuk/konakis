@@ -16,7 +16,7 @@ class MainActivity : AppCompatActivity() {
         if (savedInstanceState == null) {
             val bootstrap = SampleBootstrap()
 
-            //you can also implement ViewRouter if you didn't want to use reflection
+            //you can also implement custom ViewRouter if you didn't want to use reflection
             val viewRouter = NamingConventionViewRouter("sample.ui")
             bootstrap.navigationService = AndroidNavigationService(supportFragmentManager, viewRouter)
             bootstrap.start()

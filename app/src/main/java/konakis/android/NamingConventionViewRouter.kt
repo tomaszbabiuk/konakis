@@ -1,8 +1,6 @@
 package konakis.android
 
 import androidx.fragment.app.Fragment
-import konakis.navigation.RoutingException
-import konakis.navigation.ViewRouter
 import konakis.viewmodel.KonakisViewModelFactory
 import java.lang.Exception
 

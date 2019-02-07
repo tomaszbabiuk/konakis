@@ -3,7 +3,6 @@ package konakis.android
 import androidx.fragment.app.Fragment
 import androidx.fragment.app.FragmentManager
 import konakis.navigation.NavigationService
-import konakis.navigation.ViewRouter
 import konakis.viewmodel.KonakisViewModelFactory
 import sample.R
 
