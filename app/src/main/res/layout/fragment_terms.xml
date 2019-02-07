@@ -5,15 +5,28 @@
                 name="vm"
                 type="sample.terms.TermsViewModel"/>
     </data>
-    <LinearLayout
-            android:orientation="vertical"
-            android:layout_width="match_parent"
-            android:layout_height="match_parent">
+    <LinearLayout android:orientation="vertical"
+                  android:layout_width="match_parent"
+                  android:layout_height="match_parent">
 
         <TextView android:layout_width="match_parent"
                   android:layout_height="0dp"
                   android:layout_weight="1"
                   android:text="@{vm.termsText}"/>
+
+        <LinearLayout android:layout_width="match_parent"
+                      android:layout_height="wrap_content">
+            <Button android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:onClick="@{() -> vm.onAccept()}"
+                    android:text="@string/accept"
+                    android:layout_weight="1"/>
+            <Button android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:text="@string/reject"
+                    android:onClick="@{() -> vm.onReject()}"
+                    android:layout_weight="1"/>
+        </LinearLayout>
 
     </LinearLayout>
 </layout>
