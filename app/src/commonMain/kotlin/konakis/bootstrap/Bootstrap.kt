@@ -2,7 +2,6 @@ package konakis.bootstrap
 
 import konakis.navigation.NavigationService
 import konakis.viewmodel.KonakisViewModelFactory
-import sample.TermsViewModelFactory
 
 class BootstrapException(message : String) : Exception(message)
 
