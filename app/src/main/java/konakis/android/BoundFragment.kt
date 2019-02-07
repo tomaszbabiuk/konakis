@@ -1,4 +1,4 @@
-package konakis.sample.ui
+package konakis.android
 
 import android.os.Bundle
 import android.view.LayoutInflater
@@ -11,11 +11,10 @@ import androidx.lifecycle.ViewModel
 import androidx.lifecycle.ViewModelProvider
 import androidx.lifecycle.ViewModelProviders
 
-class BoundFragment<B : ViewDataBinding, VM : ViewModel>(
-    val layoutId: Int,
-    val viewBinder: ViewBinder<B, VM>,
-    val factory: ViewModelProvider.NewInstanceFactory,
-    val viewModelClass: Class<VM>
+abstract class BoundFragment<B : ViewDataBinding, VM : ViewModel>(
+    private val viewModelClass: Class<VM>,
+    private val layoutId: Int,
+    private val factory: ViewModelProvider.NewInstanceFactory
 ) : Fragment() {
     val TAG = viewModelClass.simpleName
 
@@ -31,8 +30,10 @@ class BoundFragment<B : ViewDataBinding, VM : ViewModel>(
 
         val model = createModel()
 
-        viewBinder.bind(binding!!, model)
+        bind(binding!!, model)
     }
+
+    abstract fun bind(binding: B, viewModel: VM)
 
     private fun createModel(): VM {
         return ViewModelProviders.of(this, factory)

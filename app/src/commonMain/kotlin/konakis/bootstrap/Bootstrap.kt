@@ -1,11 +1,12 @@
 package konakis.bootstrap
 
 import konakis.navigation.NavigationService
+import konakis.viewmodel.KonakisViewModelFactory
 import sample.TermsViewModelFactory
 
 class BootstrapException(message : String) : Exception(message)
 
-class Bootstrap {
+abstract class Bootstrap {
 
     var navigationService: NavigationService? = null
 
@@ -14,7 +15,9 @@ class Bootstrap {
             throw BootstrapException("Cannot start without navigation service!")
         }
 
-        val firstViewFactory = TermsViewModelFactory()
-        navigationService!!.navigateToView(firstViewFactory)
+        val firstViewFactory = createMainViewModelFactory()
+        navigationService!!.showViewModel(firstViewFactory)
     }
+
+    abstract fun createMainViewModelFactory() : KonakisViewModelFactory
 }

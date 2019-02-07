@@ -1,4 +1,4 @@
-package konakis.framework
+package konakis.android
 
 import android.app.Activity
 import android.view.View
