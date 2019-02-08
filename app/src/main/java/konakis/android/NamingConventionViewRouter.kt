@@ -4,7 +4,6 @@ import androidx.fragment.app.Fragment
 import konakis.viewmodel.KonakisViewModelFactory
 import java.lang.Exception
 
-
 class NamingConventionViewRouter(val packageToSearch: String) : ViewRouter {
     override fun routeToView(factory: KonakisViewModelFactory): Fragment {
 

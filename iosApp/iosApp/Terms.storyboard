@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="ood-KB-zTX">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Terms View Controller-->
+        <scene sceneID="47f-mv-B61">
+            <objects>
+                <viewController storyboardIdentifier="CustomId" id="ood-KB-zTX" customClass="TermsViewController" customModule="iosApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="H7P-Sb-8aS">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="terms" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sQy-Rw-bH1">
+                                <rect key="frame" x="106" y="219" width="45" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3bm-IC-kqp">
+                                <rect key="frame" x="190.5" y="621" width="168.5" height="30"/>
+                                <state key="normal" title="Reject"/>
+                                <connections>
+                                    <action selector="onRejectClicked:" destination="ood-KB-zTX" eventType="touchUpInside" id="7i3-cn-Tf1"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3rQ-tB-9ua">
+                                <rect key="frame" x="16" y="621" width="169" height="30"/>
+                                <state key="normal" title="Accept"/>
+                                <connections>
+                                    <action selector="onAcceptClicked:" destination="ood-KB-zTX" eventType="touchUpInside" id="uFf-2o-Kxq"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="3rQ-tB-9ua" firstAttribute="width" secondItem="jic-PJ-pze" secondAttribute="width" multiplier="0.45" id="4Bv-w9-qIU"/>
+                            <constraint firstItem="3rQ-tB-9ua" firstAttribute="leading" secondItem="jic-PJ-pze" secondAttribute="leading" constant="16" id="51B-JI-ELM"/>
+                            <constraint firstItem="jic-PJ-pze" firstAttribute="trailing" secondItem="3bm-IC-kqp" secondAttribute="trailing" constant="16" id="6dJ-IQ-Fl5"/>
+                            <constraint firstItem="jic-PJ-pze" firstAttribute="bottom" secondItem="3rQ-tB-9ua" secondAttribute="bottom" constant="16" id="Qth-rc-DgK"/>
+                            <constraint firstItem="3bm-IC-kqp" firstAttribute="width" secondItem="jic-PJ-pze" secondAttribute="width" multiplier="0.45" id="YVe-UN-I7o"/>
+                            <constraint firstItem="jic-PJ-pze" firstAttribute="bottom" secondItem="3bm-IC-kqp" secondAttribute="bottom" constant="16" id="tl7-le-n9j"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="jic-PJ-pze"/>
+                    </view>
+                    <connections>
+                        <outlet property="lblAccept" destination="3rQ-tB-9ua" id="loa-1O-t7A"/>
+                        <outlet property="lblReject" destination="3bm-IC-kqp" id="jMg-oJ-krZ"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Vuw-0l-fr9" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="53.600000000000001" y="38.23088455772114"/>
+        </scene>
+    </scenes>
+</document>
