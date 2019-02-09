@@ -26,7 +26,7 @@
         <!--view 1-->
         <scene sceneID="vM9-jA-NPR">
             <objects>
-                <viewController storyboardIdentifier="first" title="view 1" id="ZG4-C3-4JW" customClass="View1ViewController" customModule="iosApp" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="Terms" title="view 1" id="ZG4-C3-4JW" customClass="View1ViewController" customModule="iosApp" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="XTJ-eR-l88" customClass="View">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -41,7 +41,7 @@
         <!--view 2-->
         <scene sceneID="TQq-tg-JWx">
             <objects>
-                <viewController storyboardIdentifier="second" title="view 2" id="JqZ-bH-F75" userLabel="view 2" customClass="View2ViewController" customModule="iosApp" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="Demo" title="view 2" id="JqZ-bH-F75" userLabel="view 2" customClass="View2ViewController" customModule="iosApp" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" restorationIdentifier="view 2" id="U06-ZY-jrq">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
