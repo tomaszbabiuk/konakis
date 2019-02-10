@@ -7,14 +7,35 @@
 import UIKit
 import main
 
-class SimpleBindingViewController : KonakisViewController<SimpleBindingViewModel> {
-    @IBAction func onFirstNameChanged(_ sender: UITextField) {
-        model?.firstName.set(value: sender.text)
+//extension ObservableString {
+//    var boundTextView: UITextView?
+//
+//    func bindTextView(_ textView : UITextView) {
+//
+//    }
+//}
+
+extension ObservableString {
+    
+    @objc func update(_ sender: UITextField) {
+        sender.text = get()
     }
     
-    @IBAction func onLastNameChanged(_ sender: UITextField) {
-        model?.lastName.set(value: sender.text)
+    func bind(toUITextField textField: UITextField) {
+        textField.addTarget(self, action: #selector(update), for: .editingDidEnd)
+        setObserver(observer: {a in
+                textField.text = a
+                return KotlinUnit()
+            })
+        update(textField)
     }
+}
+
+class SimpleBindingViewController : KonakisViewController<SimpleBindingViewModel> {
+    
+    @IBOutlet weak var txtFirst: UITextField!
+    
+    @IBOutlet weak var txtLast: UITextField!
     
     @IBAction func onShuffleClick(_ sender: UIButton) {
         model?.shuffle()
@@ -22,14 +43,8 @@ class SimpleBindingViewController : KonakisViewController<SimpleBindingViewModel
     
     override func viewDidLoad() {
         super.viewDidLoad()
-    }
-    
-    override func bindViewModel(_ model: SimpleBindingViewModel) {
-        super.bindViewModel(model)
         
-        model.firstName.setObserver(observer: {a in
-            print(a)
-            return KotlinUnit()
-        })
+        model?.firstName.bind(toUITextField: txtFirst)
+        model?.lastName.bind(toUITextField: txtLast)
     }
 }

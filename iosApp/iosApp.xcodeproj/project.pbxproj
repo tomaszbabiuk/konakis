@@ -123,17 +123,17 @@
 			isa = PBXGroup;
 			children = (
 				F861D7E0207FA40F0085E80D /* AppDelegate.swift */,
-				F861D7E9207FA4100085E80D /* LaunchScreen.storyboard */,
+				94E4A3302210827600300B81 /* Demo.storyboard */,
+				942A549C220E28DF00BD1CD1 /* DemoViewController.swift */,
 				F861D7EC207FA4100085E80D /* Info.plist */,
-				942A5494220D984900BD1CD1 /* Terms.storyboard */,
-				942A5496220D985700BD1CD1 /* TermsViewController.swift */,
+				942A54A0220EC17400BD1CD1 /* Konakis.swift */,
+				F861D7E9207FA4100085E80D /* LaunchScreen.storyboard */,
+				94E4A3322210856E00300B81 /* SimpleBinding.storyboard */,
+				94E4A32E22106D5D00300B81 /* SimpleBindingViewController.swift */,
 				942A5498220E256C00BD1CD1 /* Stack.storyboard */,
 				942A549A220E27F200BD1CD1 /* StackViewController.swift */,
-				942A549C220E28DF00BD1CD1 /* DemoViewController.swift */,
-				942A54A0220EC17400BD1CD1 /* Konakis.swift */,
-				94E4A32E22106D5D00300B81 /* SimpleBindingViewController.swift */,
-				94E4A3302210827600300B81 /* Demo.storyboard */,
-				94E4A3322210856E00300B81 /* SimpleBinding.storyboard */,
+				942A5494220D984900BD1CD1 /* Terms.storyboard */,
+				942A5496220D985700BD1CD1 /* TermsViewController.swift */,
 			);
 			path = iosApp;
 			sourceTree = "<group>";

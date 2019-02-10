@@ -18,7 +18,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="first" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="tMw-fc-uFS">
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="first" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="tMw-fc-uFS" userLabel="First">
                                 <rect key="frame" x="87.5" y="280.5" width="200" height="30"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="200" id="vev-b1-qbF"/>
@@ -26,18 +26,12 @@
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
-                                <connections>
-                                    <action selector="onFirstNameChanged:" destination="wlO-Ta-XeW" eventType="editingDidEnd" id="dUj-VD-Url"/>
-                                </connections>
                             </textField>
-                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="last" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="DMf-7o-cLF">
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="last" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="DMf-7o-cLF" userLabel="Last">
                                 <rect key="frame" x="87.5" y="318.5" width="200" height="30"/>
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
-                                <connections>
-                                    <action selector="onLastNameChanged:" destination="wlO-Ta-XeW" eventType="editingDidEnd" id="l9X-Cv-xKo"/>
-                                </connections>
                             </textField>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qKu-ni-EH0">
                                 <rect key="frame" x="162.5" y="364.5" width="50" height="30"/>
@@ -59,6 +53,10 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="g8P-cx-bpV"/>
                     </view>
+                    <connections>
+                        <outlet property="txtFirst" destination="tMw-fc-uFS" id="DjF-ko-GMS"/>
+                        <outlet property="txtLast" destination="DMf-7o-cLF" id="0TY-Wv-3Ka"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="gpg-8h-NZT" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
