@@ -74,7 +74,7 @@ class iOSNavigationService : NSObject, NavigationService {
             let viewController = try viewRouter.routeToView(factory: factory)
             navigationController.pushViewController(viewController, animated: true)
         } catch {
-            print("dupa dupa")
+            print("failed to showViewModel")
         }
     }
     
@@ -82,7 +82,7 @@ class iOSNavigationService : NSObject, NavigationService {
         do {
             navigationController.popViewController(animated: true)
         } catch {
-            print("dupa dupa")
+            print("failed to popViewModel")
         }
     }
     

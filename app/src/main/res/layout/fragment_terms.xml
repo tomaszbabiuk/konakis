@@ -3,7 +3,7 @@
     <data>
         <variable
                 name="vm"
-                type="sample.terms.ProfileViewModel"/>
+                type="sample.terms.TermsViewModel"/>
     </data>
     <LinearLayout android:orientation="vertical"
                   android:layout_width="match_parent"
