@@ -78,6 +78,14 @@ class iOSNavigationService : NSObject, NavigationService {
         }
     }
     
+    func popViewModel() {
+        do {
+            navigationController.popViewController(animated: true)
+        } catch {
+            print("dupa dupa")
+        }
+    }
+    
     func finish() {
         exit(0)
     }

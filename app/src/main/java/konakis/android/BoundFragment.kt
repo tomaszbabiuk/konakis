@@ -44,6 +44,7 @@ abstract class BoundFragment<B : ViewDataBinding, VM : ViewModel>(
 }
 
 class FactoryWrapper(val konakisViewModelFactory: KonakisViewModelFactory) : ViewModelProvider.Factory {
+    @Suppress("UNCHECKED_CAST")
     override fun <T : ViewModel?> create(modelClass: Class<T>): T {
         return konakisViewModelFactory.create() as T
     }

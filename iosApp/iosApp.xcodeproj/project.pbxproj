@@ -446,7 +446,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 3N76KTKQ9S;
+				DEVELOPMENT_TEAM = GFW5AU64K2;
 				ENABLE_BITCODE = NO;
 				"FRAMEWORK_SEARCH_PATHS[arch=*]" = /Users/tomasz.babiuk/work/konakis/app/build/bin/ios/mainDebugFramework;
 				INFOPLIST_FILE = iosApp/Info.plist;
@@ -455,7 +455,7 @@
 					"@executable_path/Frameworks",
 				);
 				OTHER_LDFLAGS = "-v";
-				PRODUCT_BUNDLE_IDENTIFIER = org.konakis.sample;
+				PRODUCT_BUNDLE_IDENTIFIER = org.konakis.sampel;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -467,7 +467,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 3N76KTKQ9S;
+				DEVELOPMENT_TEAM = GFW5AU64K2;
 				ENABLE_BITCODE = NO;
 				FRAMEWORK_SEARCH_PATHS = /Users/tomasz.babiuk/work/konakis/app/build/bin/ios/mainReleaseFramework;
 				INFOPLIST_FILE = iosApp/Info.plist;
@@ -476,7 +476,7 @@
 					"@executable_path/Frameworks",
 				);
 				OTHER_LDFLAGS = "-v";
-				PRODUCT_BUNDLE_IDENTIFIER = org.konakis.sample;
+				PRODUCT_BUNDLE_IDENTIFIER = org.konakis.sampel;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";

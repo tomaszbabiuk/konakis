@@ -96,6 +96,10 @@ kotlin {
 // Before opening the project from iosApp directory in Xcode,
 // make sure all Gradle infrastructure exists (gradle.wrapper, gradlew).
 task copyFramework {
+    description 'This task attaches native framework built from ios module to Xcode project'
+    group 'kotlin-native'
+
+
     def buildType = project.findProperty('kotlin.build.type') ?: 'DEBUG'
     def target = project.findProperty('kotlin.target') ?: 'ios'
     dependsOn kotlin.targets."$target".compilations.main.linkTaskName('FRAMEWORK', buildType)

@@ -4,5 +4,8 @@ import konakis.viewmodel.KonakisViewModelFactory
 
 interface NavigationService {
     fun showViewModel(factory: KonakisViewModelFactory)
+
+    fun popViewModel()
+
     fun finish()
 }

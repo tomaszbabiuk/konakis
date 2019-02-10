@@ -8,9 +8,7 @@ actual open class ObservableField<T> actual constructor() {
 
     actual fun set(value: T?) {
         this.value = value
-        if (observer != null) {
-            observer!!.invoke(value)
-        }
+        observer?.invoke(value)
     }
 
     actual fun get(): T? {

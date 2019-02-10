@@ -2,15 +2,18 @@ package konakis.android
 
 import androidx.appcompat.app.AppCompatActivity
 import androidx.fragment.app.Fragment
+import androidx.fragment.app.FragmentManager
 import konakis.navigation.NavigationService
 import konakis.viewmodel.KonakisViewModelFactory
-import kotlinx.android.synthetic.main.activity_main.*
 import sample.R
 
 class AndroidNavigationService(
     private val activity: AppCompatActivity,
     private val viewRouter: ViewRouter
 ) : NavigationService {
+
+    var recentlyAddedFragmentTag: String? = null
+
     override fun finish() {
         activity.finishAffinity()
     }
@@ -20,15 +23,28 @@ class AndroidNavigationService(
         showFragment(fragment)
     }
 
-    private fun showFragment(fragment: Fragment) {
-        val tag = fragment.javaClass.simpleName
+    override fun popViewModel() {
 
         val fragmentsManager = activity.supportFragmentManager
-        val hasFragments = fragmentsManager.fragments.size > 0
 
-        val transaction = activity.supportFragmentManager.beginTransaction()
+        if (!fragmentsManager.hasFragments()) {
+            finish()
+        } else {
+            recentlyAddedFragmentTag?.let {
+                fragmentsManager.popBackStack(it, FragmentManager.POP_BACK_STACK_INCLUSIVE)
+            }
+        }
+    }
 
-        if (hasFragments) {
+
+    private fun showFragment(fragment: Fragment) {
+        val tag = fragment.javaClass.simpleName
+        recentlyAddedFragmentTag = tag
+
+        val fragmentsManager = activity.supportFragmentManager
+        val transaction = fragmentsManager.beginTransaction()
+
+        if (fragmentsManager.hasFragments()) {
             transaction.addToBackStack(tag)
         }
 
@@ -36,4 +52,7 @@ class AndroidNavigationService(
             .replace(R.id.fragment_container, fragment, tag)
             .commit()
     }
+
 }
+
+fun FragmentManager.hasFragments() = this.fragments.size > 0
