@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Simple binding-->
+        <scene sceneID="KgT-aO-cdm">
+            <objects>
+                <viewController storyboardIdentifier="SimpleBinding" title="Simple binding" id="wlO-Ta-XeW" customClass="SimpleBindingViewController" customModule="iosApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="USv-pM-r5X">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="first" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="tMw-fc-uFS">
+                                <rect key="frame" x="87.5" y="280.5" width="200" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="200" id="vev-b1-qbF"/>
+                                </constraints>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                                <connections>
+                                    <action selector="onFirstNameChanged:" destination="wlO-Ta-XeW" eventType="editingDidEnd" id="dUj-VD-Url"/>
+                                </connections>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="last" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="DMf-7o-cLF">
+                                <rect key="frame" x="87.5" y="318.5" width="200" height="30"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                                <connections>
+                                    <action selector="onLastNameChanged:" destination="wlO-Ta-XeW" eventType="editingDidEnd" id="l9X-Cv-xKo"/>
+                                </connections>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qKu-ni-EH0">
+                                <rect key="frame" x="162.5" y="364.5" width="50" height="30"/>
+                                <state key="normal" title="Shuffle"/>
+                                <connections>
+                                    <action selector="onShuffleClick:" destination="wlO-Ta-XeW" eventType="touchUpInside" id="Bgm-B6-Nnj"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="tMw-fc-uFS" firstAttribute="centerX" secondItem="USv-pM-r5X" secondAttribute="centerX" id="3Wk-6m-S18"/>
+                            <constraint firstItem="DMf-7o-cLF" firstAttribute="centerX" secondItem="USv-pM-r5X" secondAttribute="centerX" id="813-Gw-92q"/>
+                            <constraint firstItem="qKu-ni-EH0" firstAttribute="top" secondItem="DMf-7o-cLF" secondAttribute="bottom" constant="16" id="9W1-gg-MyD"/>
+                            <constraint firstItem="DMf-7o-cLF" firstAttribute="top" secondItem="tMw-fc-uFS" secondAttribute="bottom" constant="8" id="Bgf-4Q-8nM"/>
+                            <constraint firstItem="DMf-7o-cLF" firstAttribute="width" secondItem="tMw-fc-uFS" secondAttribute="width" id="lnh-sX-8Ah"/>
+                            <constraint firstItem="qKu-ni-EH0" firstAttribute="centerX" secondItem="USv-pM-r5X" secondAttribute="centerX" id="t5O-ND-dAW"/>
+                            <constraint firstItem="DMf-7o-cLF" firstAttribute="centerY" secondItem="USv-pM-r5X" secondAttribute="centerY" id="u2J-36-3NY"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="g8P-cx-bpV"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="gpg-8h-NZT" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+        </scene>
+    </scenes>
+</document>

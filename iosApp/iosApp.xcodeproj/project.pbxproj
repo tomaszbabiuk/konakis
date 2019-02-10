@@ -13,8 +13,11 @@
 		942A5497220D985700BD1CD1 /* TermsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 942A5496220D985700BD1CD1 /* TermsViewController.swift */; };
 		942A5499220E256C00BD1CD1 /* Stack.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 942A5498220E256C00BD1CD1 /* Stack.storyboard */; };
 		942A549B220E27F200BD1CD1 /* StackViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 942A549A220E27F200BD1CD1 /* StackViewController.swift */; };
-		942A549D220E28DF00BD1CD1 /* View1ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 942A549C220E28DF00BD1CD1 /* View1ViewController.swift */; };
-		942A549F220E291E00BD1CD1 /* View2ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 942A549E220E291E00BD1CD1 /* View2ViewController.swift */; };
+		942A549D220E28DF00BD1CD1 /* DemoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 942A549C220E28DF00BD1CD1 /* DemoViewController.swift */; };
+		942A54A1220EC17400BD1CD1 /* Konakis.swift in Sources */ = {isa = PBXBuildFile; fileRef = 942A54A0220EC17400BD1CD1 /* Konakis.swift */; };
+		94E4A32F22106D5D00300B81 /* SimpleBindingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94E4A32E22106D5D00300B81 /* SimpleBindingViewController.swift */; };
+		94E4A3312210827600300B81 /* Demo.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 94E4A3302210827600300B81 /* Demo.storyboard */; };
+		94E4A3332210856E00300B81 /* SimpleBinding.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 94E4A3322210856E00300B81 /* SimpleBinding.storyboard */; };
 		F861D7E1207FA40F0085E80D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F861D7E0207FA40F0085E80D /* AppDelegate.swift */; };
 		F861D7EB207FA4100085E80D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F861D7E9207FA4100085E80D /* LaunchScreen.storyboard */; };
 		F861D7F6207FA4100085E80D /* iosAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F861D7F5207FA4100085E80D /* iosAppTests.swift */; };
@@ -51,8 +54,11 @@
 		942A5496220D985700BD1CD1 /* TermsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TermsViewController.swift; sourceTree = "<group>"; };
 		942A5498220E256C00BD1CD1 /* Stack.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Stack.storyboard; sourceTree = "<group>"; };
 		942A549A220E27F200BD1CD1 /* StackViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StackViewController.swift; sourceTree = "<group>"; };
-		942A549C220E28DF00BD1CD1 /* View1ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = View1ViewController.swift; sourceTree = "<group>"; };
-		942A549E220E291E00BD1CD1 /* View2ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = View2ViewController.swift; sourceTree = "<group>"; };
+		942A549C220E28DF00BD1CD1 /* DemoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DemoViewController.swift; sourceTree = "<group>"; };
+		942A54A0220EC17400BD1CD1 /* Konakis.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Konakis.swift; sourceTree = "<group>"; };
+		94E4A32E22106D5D00300B81 /* SimpleBindingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SimpleBindingViewController.swift; sourceTree = "<group>"; };
+		94E4A3302210827600300B81 /* Demo.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Demo.storyboard; sourceTree = "<group>"; };
+		94E4A3322210856E00300B81 /* SimpleBinding.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = SimpleBinding.storyboard; sourceTree = "<group>"; };
 		F861D7DD207FA40F0085E80D /* iosApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iosApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F861D7E0207FA40F0085E80D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F861D7EA207FA4100085E80D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -123,8 +129,11 @@
 				942A5496220D985700BD1CD1 /* TermsViewController.swift */,
 				942A5498220E256C00BD1CD1 /* Stack.storyboard */,
 				942A549A220E27F200BD1CD1 /* StackViewController.swift */,
-				942A549C220E28DF00BD1CD1 /* View1ViewController.swift */,
-				942A549E220E291E00BD1CD1 /* View2ViewController.swift */,
+				942A549C220E28DF00BD1CD1 /* DemoViewController.swift */,
+				942A54A0220EC17400BD1CD1 /* Konakis.swift */,
+				94E4A32E22106D5D00300B81 /* SimpleBindingViewController.swift */,
+				94E4A3302210827600300B81 /* Demo.storyboard */,
+				94E4A3322210856E00300B81 /* SimpleBinding.storyboard */,
 			);
 			path = iosApp;
 			sourceTree = "<group>";
@@ -240,7 +249,9 @@
 			files = (
 				F861D7EB207FA4100085E80D /* LaunchScreen.storyboard in Resources */,
 				942A5499220E256C00BD1CD1 /* Stack.storyboard in Resources */,
+				94E4A3332210856E00300B81 /* SimpleBinding.storyboard in Resources */,
 				942A5495220D984900BD1CD1 /* Terms.storyboard in Resources */,
+				94E4A3312210827600300B81 /* Demo.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -274,11 +285,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				94E4A32F22106D5D00300B81 /* SimpleBindingViewController.swift in Sources */,
+				942A54A1220EC17400BD1CD1 /* Konakis.swift in Sources */,
 				942A549B220E27F200BD1CD1 /* StackViewController.swift in Sources */,
 				F861D7E1207FA40F0085E80D /* AppDelegate.swift in Sources */,
 				942A5497220D985700BD1CD1 /* TermsViewController.swift in Sources */,
-				942A549F220E291E00BD1CD1 /* View2ViewController.swift in Sources */,
-				942A549D220E28DF00BD1CD1 /* View1ViewController.swift in Sources */,
+				942A549D220E28DF00BD1CD1 /* DemoViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
