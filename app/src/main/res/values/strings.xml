@@ -2,4 +2,7 @@
     <string name="app_name">android-app</string>
     <string name="accept">Accept</string>
     <string name="reject">Reject</string>
+    <string name="firstname">First name</string>
+    <string name="lastname">Last name</string>
+    <string name="shuffle">Shuffle</string>
 </resources>

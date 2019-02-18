@@ -11,7 +11,7 @@ import main
 class DemoViewController : KonakisViewController<DemoViewModel> {
     
     @IBAction func onSimpleBindingClick(_ sender: Any) {
-        model?.goToSimpleBinding()
+        model.goToSimpleBinding()
     }
     
     override func viewDidLoad() {

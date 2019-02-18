@@ -1,23 +1,23 @@
 package konakis.databinding
 
-typealias ObservableFieldObserverType<T> = (T?) -> Unit
-
 actual open class ObservableField<T> actual constructor() {
     var value : T? = null
-    var observer: ObservableFieldObserverType<T>? = null
+    var observers = ArrayList<BindingObserver<T>>(2)
 
     actual fun set(value: T?) {
         this.value = value
-        if (observer != null) {
-            observer!!.invoke(value)
-        }
+        observers.map { it.set(value) }
     }
 
     actual fun get(): T? {
         return value
     }
 
-    fun setObserver(observer: ObservableFieldObserverType<T>) {
-        this.observer = observer
+    actual fun addObserver(observer: BindingObserver<T>) {
+        observers.add(observer)
+    }
+
+    actual fun removeObserver(observer: BindingObserver<T>) {
+        observers.remove(observer)
     }
 }

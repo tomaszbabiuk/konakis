@@ -13,10 +13,27 @@ protocol ViewRouter {
 }
 
 class KonakisViewController<T : KonakisViewModel> : UIViewController {
-    var model: T?
+    var model: T!
+    
+    private let bondsBag = KonakisBondsBag()
+    
+    override func viewWillAppear(_ animated: Bool) {
+        bondsBag.bindAll()
+    }
+    
+    override func viewWillDisappear(_ animated: Bool) {
+        bondsBag.unbindAll()
+    }
     
     func bindViewModel(_ model: T) {
         self.model = model
+    }
+    
+    override func viewDidLoad() {
+        createBindings(bonds: bondsBag)
+    }
+    
+    func createBindings(bonds: KonakisBondsBag) {
     }
 }
 

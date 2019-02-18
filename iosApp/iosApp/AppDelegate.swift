@@ -6,12 +6,6 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
         
-//        let storyboard = UIStoryboard(name: "Terms", bundle: nil)
-//        let initialViewController = storyboard.instantiateViewController(withIdentifier: "CustomId")
-//        
-//        self.window?.rootViewController = initialViewController
-//        self.window?.makeKeyAndVisible()
-        
         return true
     }
 

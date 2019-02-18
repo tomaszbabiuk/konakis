@@ -40,6 +40,12 @@
                                     <action selector="onShuffleClick:" destination="wlO-Ta-XeW" eventType="touchUpInside" id="Bgm-B6-Nnj"/>
                                 </connections>
                             </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Summary" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WnV-Ko-Mhu">
+                                <rect key="frame" x="151" y="402.5" width="73" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
@@ -47,6 +53,8 @@
                             <constraint firstItem="DMf-7o-cLF" firstAttribute="centerX" secondItem="USv-pM-r5X" secondAttribute="centerX" id="813-Gw-92q"/>
                             <constraint firstItem="qKu-ni-EH0" firstAttribute="top" secondItem="DMf-7o-cLF" secondAttribute="bottom" constant="16" id="9W1-gg-MyD"/>
                             <constraint firstItem="DMf-7o-cLF" firstAttribute="top" secondItem="tMw-fc-uFS" secondAttribute="bottom" constant="8" id="Bgf-4Q-8nM"/>
+                            <constraint firstItem="WnV-Ko-Mhu" firstAttribute="centerX" secondItem="USv-pM-r5X" secondAttribute="centerX" id="ev9-il-BcE"/>
+                            <constraint firstItem="WnV-Ko-Mhu" firstAttribute="top" secondItem="qKu-ni-EH0" secondAttribute="bottom" constant="8" id="hyS-DH-deb"/>
                             <constraint firstItem="DMf-7o-cLF" firstAttribute="width" secondItem="tMw-fc-uFS" secondAttribute="width" id="lnh-sX-8Ah"/>
                             <constraint firstItem="qKu-ni-EH0" firstAttribute="centerX" secondItem="USv-pM-r5X" secondAttribute="centerX" id="t5O-ND-dAW"/>
                             <constraint firstItem="DMf-7o-cLF" firstAttribute="centerY" secondItem="USv-pM-r5X" secondAttribute="centerY" id="u2J-36-3NY"/>
@@ -54,6 +62,7 @@
                         <viewLayoutGuide key="safeArea" id="g8P-cx-bpV"/>
                     </view>
                     <connections>
+                        <outlet property="lblSummary" destination="WnV-Ko-Mhu" id="dg2-R7-xcQ"/>
                         <outlet property="txtFirst" destination="tMw-fc-uFS" id="DjF-ko-GMS"/>
                         <outlet property="txtLast" destination="DMf-7o-cLF" id="0TY-Wv-3Ka"/>
                     </connections>
