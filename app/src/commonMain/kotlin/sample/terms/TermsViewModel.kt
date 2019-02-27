@@ -1,10 +1,10 @@
 package sample.terms
 
-import konakis.navigation.NavigationService
-import konakis.viewmodel.KonakisViewModel
+import konax.navigation.KnxNavigationService
+import konax.viewmodel.KnxViewModel
 import sample.demo.DemoViewModelFactory
 
-class TermsViewModel(val navigationService: NavigationService) : KonakisViewModel() {
+class TermsViewModel(val knxNavigationService: KnxNavigationService) : KnxViewModel() {
 
     val termsText = "Here are your terms and conditions"
 
@@ -13,11 +13,11 @@ class TermsViewModel(val navigationService: NavigationService) : KonakisViewMode
     }
 
     fun goToDemo() {
-        val demoFactory = DemoViewModelFactory(navigationService)
-        navigationService.showViewModel(demoFactory)
+        val demoFactory = DemoViewModelFactory(knxNavigationService)
+        knxNavigationService.showViewModel(demoFactory)
     }
 
     fun onReject() {
-        navigationService.finish()
+        knxNavigationService.finish()
     }
 }

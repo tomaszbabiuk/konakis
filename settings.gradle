@@ -7,6 +7,6 @@ pluginManagement {
         }
     }
 }
-rootProject.name = 'konakis'
+rootProject.name = 'konax'
 
 include ':app'

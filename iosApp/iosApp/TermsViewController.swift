@@ -8,7 +8,7 @@
 import UIKit
 import main
 
-class TermsViewController: KonakisViewController<TermsViewModel> {
+class TermsViewController: KnxViewController<TermsViewModel> {
     @IBOutlet weak var lblAccept: UIButton!
     @IBOutlet weak var lblReject: UIButton!
     

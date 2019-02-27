@@ -14,8 +14,8 @@
 		942A5499220E256C00BD1CD1 /* Stack.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 942A5498220E256C00BD1CD1 /* Stack.storyboard */; };
 		942A549B220E27F200BD1CD1 /* StackViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 942A549A220E27F200BD1CD1 /* StackViewController.swift */; };
 		942A549D220E28DF00BD1CD1 /* DemoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 942A549C220E28DF00BD1CD1 /* DemoViewController.swift */; };
-		942A54A1220EC17400BD1CD1 /* KonakisNavigation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 942A54A0220EC17400BD1CD1 /* KonakisNavigation.swift */; };
-		94DA12CB221B5C9D00C48B12 /* KonakisBinding.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94DA12CA221B5C9D00C48B12 /* KonakisBinding.swift */; };
+		942A54A1220EC17400BD1CD1 /* KonaxNavigation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 942A54A0220EC17400BD1CD1 /* KonaxNavigation.swift */; };
+		94DA12CB221B5C9D00C48B12 /* KonaxBinding.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94DA12CA221B5C9D00C48B12 /* KonaxBinding.swift */; };
 		94E4A32F22106D5D00300B81 /* SimpleBindingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94E4A32E22106D5D00300B81 /* SimpleBindingViewController.swift */; };
 		94E4A3312210827600300B81 /* Demo.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 94E4A3302210827600300B81 /* Demo.storyboard */; };
 		94E4A3332210856E00300B81 /* SimpleBinding.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 94E4A3322210856E00300B81 /* SimpleBinding.storyboard */; };
@@ -318,7 +318,7 @@
 		942A5498220E256C00BD1CD1 /* Stack.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Stack.storyboard; sourceTree = "<group>"; };
 		942A549A220E27F200BD1CD1 /* StackViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StackViewController.swift; sourceTree = "<group>"; };
 		942A549C220E28DF00BD1CD1 /* DemoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DemoViewController.swift; sourceTree = "<group>"; };
-		942A54A0220EC17400BD1CD1 /* KonakisNavigation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KonakisNavigation.swift; sourceTree = "<group>"; };
+		942A54A0220EC17400BD1CD1 /* KonaxNavigation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KonaxNavigation.swift; sourceTree = "<group>"; };
 		94A55A86221854AA008E26C5 /* RxCocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RxCocoa.framework; path = Carthage/Build/iOS/RxCocoa.framework; sourceTree = "<group>"; };
 		94A55A87221854AB008E26C5 /* RxSwift.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RxSwift.framework; path = Carthage/Build/iOS/RxSwift.framework; sourceTree = "<group>"; };
 		94A55A88221854AB008E26C5 /* RxTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RxTest.framework; path = Carthage/Build/iOS/RxTest.framework; sourceTree = "<group>"; };
@@ -4145,12 +4145,12 @@
 		94D62B13221855C300FAA786 /* lint-results.xml */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = "lint-results.xml"; sourceTree = "<group>"; };
 		94D62B14221855C300FAA786 /* lint-results.html */ = {isa = PBXFileReference; lastKnownFileType = text.html; path = "lint-results.html"; sourceTree = "<group>"; };
 		94D62B15221855C300FAA786 /* konakis.app.iosMain.iml */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = konakis.app.iosMain.iml; sourceTree = "<group>"; };
-		94D62B1D221855C400FAA786 /* BaseKonakisViewModel.kt */ = {isa = PBXFileReference; lastKnownFileType = text; path = BaseKonakisViewModel.kt; sourceTree = "<group>"; };
+		94D62B1D221855C400FAA786 /* BaseKnxViewModel.kt */ = {isa = PBXFileReference; lastKnownFileType = text; path = BaseKnxViewModel.kt; sourceTree = "<group>"; };
 		94D62B1F221855C400FAA786 /* ObservableField.kt */ = {isa = PBXFileReference; lastKnownFileType = text; path = ObservableField.kt; sourceTree = "<group>"; };
-		94D62B25221855C400FAA786 /* KonakisViewModel.kt */ = {isa = PBXFileReference; lastKnownFileType = text; path = KonakisViewModel.kt; sourceTree = "<group>"; };
-		94D62B26221855C400FAA786 /* KonakisViewModelFactory.kt */ = {isa = PBXFileReference; lastKnownFileType = text; path = KonakisViewModelFactory.kt; sourceTree = "<group>"; };
+		94D62B25221855C400FAA786 /* KnxViewModel.kt */ = {isa = PBXFileReference; lastKnownFileType = text; path = KnxViewModel.kt; sourceTree = "<group>"; };
+		94D62B26221855C400FAA786 /* KnxViewModelFactory.kt */ = {isa = PBXFileReference; lastKnownFileType = text; path = KnxViewModelFactory.kt; sourceTree = "<group>"; };
 		94D62B28221855C400FAA786 /* Bootstrap.kt */ = {isa = PBXFileReference; lastKnownFileType = text; path = Bootstrap.kt; sourceTree = "<group>"; };
-		94D62B2A221855C400FAA786 /* NavigationService.kt */ = {isa = PBXFileReference; lastKnownFileType = text; path = NavigationService.kt; sourceTree = "<group>"; };
+		94D62B2A221855C400FAA786 /* KnxNavigationService.kt */ = {isa = PBXFileReference; lastKnownFileType = text; path = KnxNavigationService.kt; sourceTree = "<group>"; };
 		94D62B2C221855C400FAA786 /* ObservableField.kt */ = {isa = PBXFileReference; lastKnownFileType = text; path = ObservableField.kt; sourceTree = "<group>"; };
 		94D62B2F221855C400FAA786 /* DemoViewModel.kt */ = {isa = PBXFileReference; lastKnownFileType = text; path = DemoViewModel.kt; sourceTree = "<group>"; };
 		94D62B30221855C400FAA786 /* DemoViewModelFactory.kt */ = {isa = PBXFileReference; lastKnownFileType = text; path = DemoViewModelFactory.kt; sourceTree = "<group>"; };
@@ -4166,9 +4166,9 @@
 		94D62B44221855C400FAA786 /* styles.xml */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = styles.xml; sourceTree = "<group>"; };
 		94D62B45221855C400FAA786 /* strings.xml */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = strings.xml; sourceTree = "<group>"; };
 		94D62B46221855C400FAA786 /* AndroidManifest.xml */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = AndroidManifest.xml; sourceTree = "<group>"; };
-		94D62B4A221855C400FAA786 /* BaseKonakisViewModel.kt */ = {isa = PBXFileReference; lastKnownFileType = text; path = BaseKonakisViewModel.kt; sourceTree = "<group>"; };
-		94D62B4C221855C400FAA786 /* NamingConventionViewRouter.kt */ = {isa = PBXFileReference; lastKnownFileType = text; path = NamingConventionViewRouter.kt; sourceTree = "<group>"; };
-		94D62B4D221855C400FAA786 /* AndroidNavigationService.kt */ = {isa = PBXFileReference; lastKnownFileType = text; path = AndroidNavigationService.kt; sourceTree = "<group>"; };
+		94D62B4A221855C400FAA786 /* BaseKnxViewModel.kt */ = {isa = PBXFileReference; lastKnownFileType = text; path = BaseKnxViewModel.kt; sourceTree = "<group>"; };
+		94D62B4C221855C400FAA786 /* KnxNamingConventionViewRouter.kt */ = {isa = PBXFileReference; lastKnownFileType = text; path = KnxNamingConventionViewRouter.kt; sourceTree = "<group>"; };
+		94D62B4D221855C400FAA786 /* AndroidKnxNavigationService.kt */ = {isa = PBXFileReference; lastKnownFileType = text; path = AndroidKnxNavigationService.kt; sourceTree = "<group>"; };
 		94D62B4E221855C400FAA786 /* ViewRouter.kt */ = {isa = PBXFileReference; lastKnownFileType = text; path = ViewRouter.kt; sourceTree = "<group>"; };
 		94D62B4F221855C400FAA786 /* ViewParam.kt */ = {isa = PBXFileReference; lastKnownFileType = text; path = ViewParam.kt; sourceTree = "<group>"; };
 		94D62B50221855C400FAA786 /* BoundFragment.kt */ = {isa = PBXFileReference; lastKnownFileType = text; path = BoundFragment.kt; sourceTree = "<group>"; };
@@ -6074,7 +6074,7 @@
 		94D6343022193F3F00FAA786 /* Differ.framework.dSYM */ = {isa = PBXFileReference; lastKnownFileType = wrapper.dsym; name = Differ.framework.dSYM; path = Carthage/Build/iOS/Differ.framework.dSYM; sourceTree = "<group>"; };
 		94D6343122193F3F00FAA786 /* ReactiveKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ReactiveKit.framework; path = Carthage/Build/iOS/ReactiveKit.framework; sourceTree = "<group>"; };
 		94D6343222193F3F00FAA786 /* RxBiBinding.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RxBiBinding.framework; path = Carthage/Build/iOS/RxBiBinding.framework; sourceTree = "<group>"; };
-		94DA12CA221B5C9D00C48B12 /* KonakisBinding.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KonakisBinding.swift; sourceTree = "<group>"; };
+		94DA12CA221B5C9D00C48B12 /* KonaxBinding.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KonaxBinding.swift; sourceTree = "<group>"; };
 		94E4A32E22106D5D00300B81 /* SimpleBindingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SimpleBindingViewController.swift; sourceTree = "<group>"; };
 		94E4A3302210827600300B81 /* Demo.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Demo.storyboard; sourceTree = "<group>"; };
 		94E4A3322210856E00300B81 /* SimpleBinding.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = SimpleBinding.storyboard; sourceTree = "<group>"; };
@@ -6128,6 +6128,15 @@
 				942A5486220D8F1000BD1CD1 /* main.framework.dSYM */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		945AEA8E2226CCA8004188E0 /* Konax */ = {
+			isa = PBXGroup;
+			children = (
+				942A54A0220EC17400BD1CD1 /* KonaxNavigation.swift */,
+				94DA12CA221B5C9D00C48B12 /* KonaxBinding.swift */,
+			);
+			path = Konax;
 			sourceTree = "<group>";
 		};
 		94D61835221855BB00FAA786 /* konakis */ = {
@@ -18116,7 +18125,7 @@
 		94D62B1C221855C400FAA786 /* viewmodel */ = {
 			isa = PBXGroup;
 			children = (
-				94D62B1D221855C400FAA786 /* BaseKonakisViewModel.kt */,
+				94D62B1D221855C400FAA786 /* BaseKnxViewModel.kt */,
 			);
 			path = viewmodel;
 			sourceTree = "<group>";
@@ -18167,8 +18176,8 @@
 		94D62B24221855C400FAA786 /* viewmodel */ = {
 			isa = PBXGroup;
 			children = (
-				94D62B25221855C400FAA786 /* KonakisViewModel.kt */,
-				94D62B26221855C400FAA786 /* KonakisViewModelFactory.kt */,
+				94D62B25221855C400FAA786 /* KnxViewModel.kt */,
+				94D62B26221855C400FAA786 /* KnxViewModelFactory.kt */,
 			);
 			path = viewmodel;
 			sourceTree = "<group>";
@@ -18184,7 +18193,7 @@
 		94D62B29221855C400FAA786 /* navigation */ = {
 			isa = PBXGroup;
 			children = (
-				94D62B2A221855C400FAA786 /* NavigationService.kt */,
+				94D62B2A221855C400FAA786 /* KnxNavigationService.kt */,
 			);
 			path = navigation;
 			sourceTree = "<group>";
@@ -18326,7 +18335,7 @@
 		94D62B49221855C400FAA786 /* viewmodel */ = {
 			isa = PBXGroup;
 			children = (
-				94D62B4A221855C400FAA786 /* BaseKonakisViewModel.kt */,
+				94D62B4A221855C400FAA786 /* BaseKnxViewModel.kt */,
 			);
 			path = viewmodel;
 			sourceTree = "<group>";
@@ -18334,8 +18343,8 @@
 		94D62B4B221855C400FAA786 /* android */ = {
 			isa = PBXGroup;
 			children = (
-				94D62B4C221855C400FAA786 /* NamingConventionViewRouter.kt */,
-				94D62B4D221855C400FAA786 /* AndroidNavigationService.kt */,
+				94D62B4C221855C400FAA786 /* KnxNamingConventionViewRouter.kt */,
+				94D62B4D221855C400FAA786 /* AndroidKnxNavigationService.kt */,
 				94D62B4E221855C400FAA786 /* ViewRouter.kt */,
 				94D62B4F221855C400FAA786 /* ViewParam.kt */,
 				94D62B50221855C400FAA786 /* BoundFragment.kt */,
@@ -22108,11 +22117,11 @@
 		F861D7DF207FA40F0085E80D /* iosApp */ = {
 			isa = PBXGroup;
 			children = (
+				945AEA8E2226CCA8004188E0 /* Konax */,
 				F861D7E0207FA40F0085E80D /* AppDelegate.swift */,
 				94E4A3302210827600300B81 /* Demo.storyboard */,
 				942A549C220E28DF00BD1CD1 /* DemoViewController.swift */,
 				F861D7EC207FA4100085E80D /* Info.plist */,
-				942A54A0220EC17400BD1CD1 /* KonakisNavigation.swift */,
 				F861D7E9207FA4100085E80D /* LaunchScreen.storyboard */,
 				94E4A3322210856E00300B81 /* SimpleBinding.storyboard */,
 				94E4A32E22106D5D00300B81 /* SimpleBindingViewController.swift */,
@@ -22120,7 +22129,6 @@
 				942A549A220E27F200BD1CD1 /* StackViewController.swift */,
 				942A5494220D984900BD1CD1 /* Terms.storyboard */,
 				942A5496220D985700BD1CD1 /* TermsViewController.swift */,
-				94DA12CA221B5C9D00C48B12 /* KonakisBinding.swift */,
 			);
 			path = iosApp;
 			sourceTree = "<group>";
@@ -22600,11 +22608,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				94E4A32F22106D5D00300B81 /* SimpleBindingViewController.swift in Sources */,
-				942A54A1220EC17400BD1CD1 /* KonakisNavigation.swift in Sources */,
+				942A54A1220EC17400BD1CD1 /* KonaxNavigation.swift in Sources */,
 				942A549B220E27F200BD1CD1 /* StackViewController.swift in Sources */,
 				F861D7E1207FA40F0085E80D /* AppDelegate.swift in Sources */,
 				942A5497220D985700BD1CD1 /* TermsViewController.swift in Sources */,
-				94DA12CB221B5C9D00C48B12 /* KonakisBinding.swift in Sources */,
+				94DA12CB221B5C9D00C48B12 /* KonaxBinding.swift in Sources */,
 				942A549D220E28DF00BD1CD1 /* DemoViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -1,4 +1,4 @@
-package konakis.databinding
+package konax.databinding
 
 actual open class ObservableField<T> actual constructor() {
     var value : T? = null

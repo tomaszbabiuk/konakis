@@ -1,11 +1,11 @@
 package sample.terms
 
-import konakis.navigation.NavigationService
-import konakis.viewmodel.KonakisViewModel
-import konakis.viewmodel.KonakisViewModelFactory
+import konax.navigation.KnxNavigationService
+import konax.viewmodel.KnxViewModel
+import konax.viewmodel.KnxViewModelFactory
 
-class TermsViewModelFactory(val navigationService: NavigationService) : KonakisViewModelFactory {
-    override fun create(): KonakisViewModel {
-        return TermsViewModel(navigationService)
+class TermsViewModelFactory(val knxNavigationService: KnxNavigationService) : KnxViewModelFactory {
+    override fun create(): KnxViewModel {
+        return TermsViewModel(knxNavigationService)
     }
 }

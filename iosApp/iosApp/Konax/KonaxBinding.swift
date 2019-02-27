@@ -1,5 +1,5 @@
 //
-//  KonakisBinding.swift
+//  KonaxBinding.swift
 //  iosApp
 //
 //  Created by Tomasz Babiuk on 18.02.2019.
@@ -8,12 +8,12 @@
 import UIKit
 import main
 
-protocol KonakisBond {
+protocol KnxBond {
     func bind()
     func unbind()
 }
 
-class BaseKonakisBond<T> : NSObject, BindingObserver, KonakisBond {
+class BaseKnxBond<T> : NSObject, BindingObserver, KnxBond {
     
     func set(value: Any?) {
         if let valueAsString = value as? String? {
@@ -43,7 +43,7 @@ class BaseKonakisBond<T> : NSObject, BindingObserver, KonakisBond {
     }
 }
 
-class UITextFieldKonakisBond : BaseKonakisBond<UITextField> {
+class UITextFieldKnxBond : BaseKnxBond<UITextField> {
     @objc func textFieldDidChange(textField: UITextField) {
         field.set(value_: textField.text)
     }
@@ -63,31 +63,31 @@ class UITextFieldKonakisBond : BaseKonakisBond<UITextField> {
     }
 }
 
-class UILabelKonakisBond : BaseKonakisBond<UILabel> {
+class UILabelKnxBond : BaseKnxBond<UILabel> {
     override func updateControlIfNeeded(_ newValue: String?) {
         control.text = newValue
     }
 }
 
 extension UITextField {
-    func konakisBind(to: ObservableString, _ bonds: KonakisBondsBag) {
-        let bond = UITextFieldKonakisBond(control: self, field: to)
+    func knxBind(to: ObservableString, _ bonds: KnxBondsBag) {
+        let bond = UITextFieldKnxBond(control: self, field: to)
         bonds.addBond(bond)
     }
 }
 
 extension UILabel {
-    func konakisBind(to: ObservableString, _ bonds: KonakisBondsBag) {
-        let bond = UILabelKonakisBond(control: self, field: to)
+    func knxBind(to: ObservableString, _ bonds: KnxBondsBag) {
+        let bond = UILabelKnxBond(control: self, field: to)
         bonds.addBond(bond)
     }
 }
 
-class KonakisBondsBag {
+class KnxBondsBag {
     
-    var bonds: [KonakisBond] = []
+    var bonds: [KnxBond] = []
     
-    func addBond(_ bond: KonakisBond) {
+    func addBond(_ bond: KnxBond) {
         bonds.append(bond)
     }
     

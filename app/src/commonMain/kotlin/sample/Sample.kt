@@ -1,11 +1,11 @@
 package sample
 
-import konakis.bootstrap.Bootstrap
-import konakis.viewmodel.KonakisViewModelFactory
+import konax.bootstrap.KnxBootstrap
+import konax.viewmodel.KnxViewModelFactory
 import sample.terms.TermsViewModelFactory
 
-class SampleBootstrap : Bootstrap() {
-    override fun createMainViewModelFactory(): KonakisViewModelFactory {
+class SampleBootstrap : KnxBootstrap() {
+    override fun createMainViewModelFactory(): KnxViewModelFactory {
         return TermsViewModelFactory(navigationService!!)
     }
 }

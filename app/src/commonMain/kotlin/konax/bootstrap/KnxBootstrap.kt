@@ -1,13 +1,13 @@
-package konakis.bootstrap
+package konax.bootstrap
 
-import konakis.navigation.NavigationService
-import konakis.viewmodel.KonakisViewModelFactory
+import konax.navigation.KnxNavigationService
+import konax.viewmodel.KnxViewModelFactory
 
 class BootstrapException(message : String) : Exception(message)
 
-abstract class Bootstrap {
+abstract class KnxBootstrap {
 
-    var navigationService: NavigationService? = null
+    var navigationService: KnxNavigationService? = null
 
     fun start() {
         if (navigationService == null) {
@@ -18,5 +18,5 @@ abstract class Bootstrap {
         navigationService!!.showViewModel(firstViewFactory)
     }
 
-    abstract fun createMainViewModelFactory() : KonakisViewModelFactory
+    abstract fun createMainViewModelFactory() : KnxViewModelFactory
 }

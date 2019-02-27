@@ -1,21 +1,20 @@
-package konakis.android
+package konax.android
 
 import androidx.appcompat.app.AppCompatActivity
 import androidx.fragment.app.Fragment
-import konakis.navigation.NavigationService
-import konakis.viewmodel.KonakisViewModelFactory
-import kotlinx.android.synthetic.main.activity_main.*
+import konax.navigation.KnxNavigationService
+import konax.viewmodel.KnxViewModelFactory
 import sample.R
 
-class AndroidNavigationService(
+class AndroidKnxNavigationService(
     private val activity: AppCompatActivity,
     private val viewRouter: ViewRouter
-) : NavigationService {
+) : KnxNavigationService {
     override fun finish() {
         activity.finishAffinity()
     }
 
-    override fun showViewModel(factory: KonakisViewModelFactory) {
+    override fun showViewModel(factory: KnxViewModelFactory) {
         val fragment = viewRouter.routeToView(factory)
         showFragment(fragment)
     }

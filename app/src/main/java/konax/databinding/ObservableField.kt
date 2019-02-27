@@ -1,4 +1,4 @@
-package konakis.databinding
+package konax.databinding
 
 actual open class ObservableField<T> actual constructor() : androidx.databinding.ObservableField<T>() {
     var observers = ArrayList<BindingObserver<T>>(2)

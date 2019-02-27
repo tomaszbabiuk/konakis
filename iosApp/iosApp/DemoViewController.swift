@@ -8,7 +8,7 @@
 import UIKit
 import main
 
-class DemoViewController : KonakisViewController<DemoViewModel> {
+class DemoViewController : KnxViewController<DemoViewModel> {
     
     @IBAction func onSimpleBindingClick(_ sender: Any) {
         model.goToSimpleBinding()

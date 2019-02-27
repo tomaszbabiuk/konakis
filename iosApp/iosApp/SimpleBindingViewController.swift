@@ -7,7 +7,7 @@
 import UIKit
 import main
 
-class SimpleBindingViewController : KonakisViewController<SimpleBindingViewModel> {
+class SimpleBindingViewController : KnxViewController<SimpleBindingViewModel> {
     
     @IBOutlet weak var txtFirst: UITextField!
     
@@ -19,9 +19,9 @@ class SimpleBindingViewController : KonakisViewController<SimpleBindingViewModel
         model.shuffle()
     }
     
-    override func createBindings(bonds: KonakisBondsBag) {
-        txtFirst.konakisBind(to: model.firstName, bonds)
-        txtLast.konakisBind(to: model.lastName, bonds)
-        lblSummary.konakisBind(to: model.fullName, bonds)
+    override func createBindings(bonds: KnxBondsBag) {
+        txtFirst.knxBind(to: model.firstName, bonds)
+        txtLast.knxBind(to: model.lastName, bonds)
+        lblSummary.knxBind(to: model.fullName, bonds)
     }
 }

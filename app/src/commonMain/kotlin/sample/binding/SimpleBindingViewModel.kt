@@ -1,12 +1,12 @@
 package sample.binding
 
-import konakis.databinding.BindingObserver
-import konakis.databinding.ObservableString
-import konakis.navigation.NavigationService
-import konakis.viewmodel.KonakisViewModel
+import konax.databinding.BindingObserver
+import konax.databinding.ObservableString
+import konax.navigation.KnxNavigationService
+import konax.viewmodel.KnxViewModel
 import kotlin.random.Random
 
-class SimpleBindingViewModel(val navigationService: NavigationService) : KonakisViewModel(), BindingObserver<String> {
+class SimpleBindingViewModel(val knxNavigationService: KnxNavigationService) : KnxViewModel(), BindingObserver<String> {
     override fun set(value: String?) {
         fullName.set("${firstName.get()} ${lastName.get()}")
     }

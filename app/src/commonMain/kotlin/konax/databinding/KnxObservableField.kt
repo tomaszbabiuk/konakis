@@ -1,4 +1,4 @@
-package konakis.databinding
+package konax.databinding
 
 interface BindingObserver<T> {
     fun set(value: T?)
